@@ -1,0 +1,386 @@
+@import url(./Montserrat.zip);
+@import url(./Playfair_Display.zip);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+mainCintainer{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+main>img{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+main>div{
+    width: 80%;
+    height: 70vh;
+    max-width: 1480px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+main>div>.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+main>div>.buttons>button{
+    background-color: rgba(153, 134, 42, 1);
+    color: white;
+    padding: 15px 30px;
+    font-size: medium;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+main>div>.buttons>button:active{
+    background-color:rgba(40, 40, 40, 0.776) ;
+}
+main>div>manu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main>div>manu>div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main>div>manu>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+main>div>manu>ul>li{
+    list-style: none;
+    /* border: 1px solid white; */
+    padding: 15px 75px;
+    
+}
+
+header{
+    width: 100%;
+   
+    height: 100%;
+    margin-top: 17vh;
+    background-color:rgb(40, 40, 40) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+header>div{
+    width: 80%;
+     max-width: 1480px;
+    min-height: 70vh;
+    border: 2px solid white;
+    margin: 100px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+header>div>h1{
+    display: flex;
+    flex-direction: column;
+    min-height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+header>div>h1::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: white;
+    
+}
+header>div>p{
+    max-width: 500px;
+    text-align: center;
+}
+nav{
+    padding: 70px 0;
+    background-color: rgba(230, 227, 196, 1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+nav>div{
+    display: flex;
+    max-width: 1480px;
+    width: 80%;
+    padding: 40px 0;
+    gap: 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav>hr{
+    background-color:rgba(153, 132, 49, 1) ;
+    width: 80%;
+    max-width: 1480px;
+}
+nav>div>.novinki{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 720px;
+    flex: 1 1 400px;
+}
+nav>div>.novinki>h2{
+    font-size: 25px;
+    /* max-width: 300px; */
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+}
+nav>div>.novinki>h2::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color:rgba(40, 40, 40, 0.433);
+}
+nav>div>.novinki>p{
+/* max-width: 400px; */
+color: rgba(40, 40, 40, 0.792);
+}
+nav>div>.novinki>.axusyak{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+nav>div>.novinki>.axusyak>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid black;
+    
+}
+nav>div>.novinki>.axusyak>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav>div>.novinki>.axusyak>div>div>h4{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+}
+nav>div>.novinki>button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgba(153, 132, 49, 1);
+    text-transform: uppercase;
+}
+nav>div>.novinki>button:active{
+    background-color:rgba(40, 40, 40, 0.776) ;
+}
+nav>div>.nkarner1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    flex: 1 1 400px;
+}
+nav>div>.nkarner1>img{
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+nav>div>.nkarner1>div{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 20px;
+}
+article{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+article>img{
+    max-width: 15%;
+    position: absolute;
+}
+article>.nkar1{
+    left: 10%;
+    top: 6%;
+}
+article>.nkar2{
+    right: 10%;
+    top: 7%;
+}
+article>div{
+    width: 80%;
+    max-width: 1480px;
+    height: 100%;
+    padding: 70px 0;
+}
+article>div>fieldset{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article>div>fieldset>legend{
+    /* display: flex; */
+    text-align: center;
+    font-size: 18px;
+}
+article>div>fieldset>div{
+    width: 43%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+article>div>fieldset>div>p{
+    /* max-width: 430px; */
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+article>div>fieldset>div>p::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color:white;
+}
+article>div>fieldset>div>div{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    
+}
+article>div>fieldset>div>div>input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+
+}
+article>div>fieldset>div>input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+article>div>fieldset>div>button{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+article>div>fieldset>div>button:active{
+    background-color:rgba(0, 0, 0, 0.173)
+}
+footer{
+    background-color: rgba(153, 132, 49, 1);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+footer>div{
+    width: 80%;
+    max-width: 1480px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer>div>ul{
+    /* width: 80%; */
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    min-height: 50px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+footer>div>.verj{
+    
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    border-bottom: 1px solid white;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+footer>div>.verj>div{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    article>div>fieldset>legend{
+        font-size: 17px;
+        padding: 70px 0;
+    }
+    article>div>fieldset>div{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 480px){
+    main>div>manu>div{
+        justify-content: center;
+    }
+    article>img{
+        max-width: 20%;
+    }
+}
