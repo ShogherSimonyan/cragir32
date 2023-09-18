@@ -1,5 +1,12 @@
-@import url(./Montserrat.zip);
-@import url(./Playfair_Display.zip);
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(./font/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family:'Playfair Display', serif ;
+    src: url(./font/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -141,9 +148,9 @@ nav>div{
     flex-wrap: wrap;
 }
 nav>hr{
-    background-color:rgba(153, 132, 49, 1) ;
     width: 80%;
     max-width: 1480px;
+    border: 1px solid rgba(153, 132, 49, 1) ;
 }
 nav>div>.novinki{
     gap: 30px;
@@ -212,6 +219,7 @@ nav>div>.nkarner1{
     gap: 30px;
     align-items: center;
     flex: 1 1 400px;
+    width: 100%;
 }
 nav>div>.nkarner1>img{
     max-width: 500px;
@@ -220,8 +228,12 @@ nav>div>.nkarner1>img{
 }
 nav>div>.nkarner1>div{
     display: flex;
-    flex-wrap:wrap ;
     gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+nav>div>.nkarner1>div>img{
+    width: 220px;
 }
 article{
     width: 100%;
@@ -375,6 +387,10 @@ footer>div>.verj>div{
     article>div>fieldset>div{
         width: 90%;
     }
+    nav>div>.nkarner1>div{
+    flex-wrap: wrap;
+    }
+
 }
 @media only screen and (max-width: 480px){
     main>div>manu>div{
